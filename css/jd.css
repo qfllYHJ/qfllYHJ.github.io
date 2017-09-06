@@ -1,0 +1,637 @@
+/*
+* @Author: Administrator
+* @Date:   2017-06-11 09:20:18
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-06-13 19:23:46
+*/
+
+
+/* topBanner的开始 */
+
+.bg {
+
+	position: relative;
+}
+.bg a {
+	position: absolute;
+	width: 100%;
+	height: 480px;
+	display: inline-block;
+	background:url(../img/bigBG.png) center no-repeat ;
+}
+.topBanner{
+
+	height: 80px;
+	background-color: #F94840;
+
+}
+.topBanner .w {
+	position: relative;
+	
+}
+.topBanner .w ._618 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.topBanner .w .pic {
+	position: relative;
+}
+.topBanner .w .pic i {
+	position: absolute;
+	top: 4px;
+	right:5px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+}
+/* topBanner的结束 */
+
+/* shortcut的开始 */
+.shortcut {
+	height: 30px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+
+.shortcut  .w .shout-left {
+	line-height: 30px;
+	color: #999;
+	position: absolute;
+	top: 1px;
+	left: 290px;
+	
+
+}
+.shortcut  .shout-left i {
+	color: red;
+	font-size: 14px;
+}
+
+.shortcut .shout-right   {
+	float: right;
+}
+.shortcut .shout-right li {
+	float: left;
+	margin-left: 12px;
+	line-height: 30px;
+}
+
+.shortcut .shout-right .line {
+	height: 10px;
+	width: 1px;
+	background-color: #ccc;
+	margin-top: 11px;
+} 
+.shortcut .shout-right .red a {
+	color: #f10215;
+
+}
+.clear {
+	clear: both;
+}
+/* shortcu的结束 */
+/* logo的开始 */
+.header {
+	height: 140px; 
+	position: relative;
+}
+.logo {
+	width: 380px;
+	height: 340px;
+	font-size:0;
+	position: relative;
+
+}
+.logo a img {
+	height: 171px;
+	width: 190px;
+	position: absolute;
+	top:-32px;
+	left: 0px;
+}
+.search {
+	width: 548px;
+	height: 33px;
+	border:1px solid red;
+	position: absolute;
+	top: 25px;
+	left: 320px;
+
+}
+.search input {
+	width: 445px;
+	height: 33px;
+	background: #fff;
+	padding-left:6px;
+	float: left;
+}
+.search i {
+	float: left;
+	width: 47px;
+	height: 33px;
+	background-color: #fff;
+	font-size: 25px;
+	line-height: 33px;	
+}
+.header{
+	/* overflow: hidden; */
+	position: relative;
+
+}
+
+.search button {
+	float: left;	
+	width: 50px;
+	height: 33px;
+	background-color: red;
+	text-align: center;
+	line-height: 33px;
+	color: #fff;
+}
+.buycar {
+	width: 188px;
+	height: 33px;
+	position: absolute;
+	border: 1px solid  red;
+	right: 99px;
+	top: 25px;
+	text-align: center;
+
+}
+.buycar a {
+	line-height: 33px;
+
+}
+.buycar a i {
+	margin-right: 5px;
+}
+.buycar a .num {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-color: red;
+	border-radius: 50%;
+	line-height: 14px;
+	color: #fff;
+	position: absolute;
+	top: 5px;
+	right: 34px;
+}
+.code {
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+.txt{
+position: absolute;
+width: 550px;
+height: 31px;
+top: 60px;
+left: 320px;
+line-height: 31px;
+}
+.txt li {
+	float: left;
+	margin-left: 10px;
+}
+/* logo的结束 */
+
+.nav {
+	height: 40px;
+	position: absolute;
+	font-size: 16px;
+	color: #555;
+	bottom: -15px;
+	left: 235px;
+	font-weight: 700;
+
+}
+.nav li {
+	float: left;
+	margin-right: 30px
+
+}
+.nav .line {
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin-top: 5px;
+	margin-left: -10px;
+	margin-right: 20px;
+}
+
+/* main的开始 */
+.main {
+	width: 1190px;
+	height: 480px;
+	/* background-color: red; */
+	margin: 0 auto;
+} 
+.main .menu {
+	float:left;
+	width: 190px;
+	height: 480px;
+	background-color: #6e6568;
+	line-height: 28px;
+	
+
+}
+.main .menu ul {
+	margin-top: 10px;
+}
+.main .menu ul li {
+	padding-left: 12px;
+}
+.main .menu ul li a {
+	color: #fff;
+}
+.main .menu ul li:hover {
+	background-color: rgba(255,255,255,.5);
+}
+.main .main-inner {
+	width: 790px;
+	height: 340px;
+	float:left;
+	margin-left: 10px;
+	margin-bottom: 10px;	
+	position: relative;
+
+
+}
+.main .main-inner ul {
+	width: 160px;
+	height: 20px;
+	background-color:rgba(255,255,255,.3);
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -80px;	
+	border-radius: 10px;
+}
+.main .main-inner ul li {
+	width: 12px;
+	height: 12px;
+	float: left;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-top: 4px;
+
+}
+.main .main-inner ul li:first-child {
+	margin-left: 8px;
+	background-color: red;
+}
+.main .main-inner ul li:hover {
+	background-color: red;
+}
+.main .main-inner .inner-left {
+	display: none;
+	width: 30px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	background-color: rgba(0,0,0,.2);
+	left: 0px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.main .main-inner .inner-right {
+	display: none;
+	width: 30px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	background-color: rgba(0,0,0,.2);
+	right: 0px;
+	text-align: center;
+	line-height: 60px;
+}
+.main .main-inner:hover .inner-right {
+	display: inline-block;
+}
+.main .main-inner:hover .inner-left {
+	display: inline-block;
+}
+.main .inner-right:hover {
+	background-color: rgba(0,0,0,.7);
+}
+.main .inner-left:hover {
+	background-color: rgba(0,0,0,.7);
+}
+.in-left {
+	float: left;
+	margin-top: 10px;
+	width: 390px;
+	height: 130px;
+}
+.in-right {
+	float: right;
+	margin-top: 10px;
+	width: 390px;
+	height: 130px;
+}
+
+
+
+
+
+
+.main .main-left{
+	float: right;
+	width: 190px;
+	height: 480px;
+	background-color: #fff;
+}
+.main .main-left .user {
+	width: 190px;
+	height: 115px;
+	position: relative;
+	border-bottom: 1px solid #e6e6e6;
+}
+.main .main-left .user .user-img {
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	border:3px solid #c9a65b;
+	border-radius: 50%;
+	overflow: hidden;
+	top: 15px;
+	left: 15px;
+}
+.main .main-left .user .user-img img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding:3px;
+}
+.main .main-left .user span {
+	position: absolute;
+	top: 21px;
+	left: 72px;
+}
+.main .main-left .user .login {
+	position: absolute;
+	top: 41px;
+	left: 72px;
+}
+.main .main-left .user .zhuce {
+	position: absolute;
+	top: 41px;
+	left: 100px;
+}
+.main .main-left .user .new {
+	position: absolute;
+	border: 2px solid red;
+	width: 70px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: red;
+	left: 15px;
+	top: 75px;
+}
+.main .main-left .user .plus {
+	position: absolute;
+	border: 2px solid red;
+	width: 70px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: red;
+	left: 100px;
+	top: 75px;
+}
+.main .main-left .news {
+	width: 160px;
+	padding:0 15px 0 15px;
+	height: 154px;
+	border-bottom: 1px solid #e7e7e7;
+
+
+}
+.main .main-left .top {
+	height: 26px;
+	border-bottom:1px solid #ccc;
+	line-height: 26px;	
+	position: relative;
+
+}
+.cuxiao,.gonggao{
+	float: left;
+}
+.main .main-left .top i {
+	float: left;
+	width: 1px;
+	height: 17px;
+	background-color: #dfe0e1;
+	margin-top: 7px;
+	margin-left: 13px;
+	margin-right: 15px;
+}
+.top .gengduo {
+	float: right;
+}
+.top span {
+	position: absolute;
+	height: 2px;
+	width: 28px;
+	background-color:red;
+	left: 50px;
+	bottom: -1px;
+}
+.news .news-list {
+	padding-top: 13px;
+	height: 127px;
+
+}
+.news .news-list a {
+	display: block;
+	line-height:24px;
+
+}
+.table {
+	/* width: 190px; */
+    height: 210px;
+    overflow: hidden;
+}
+.table ul {
+ 	margin-left: -1px;
+    margin-right: -1px;
+}
+.table ul li {
+	width: 47px;
+	height: 69px;
+	float: left;
+	border:1px solid #e7e7e7;
+	margin-right: -1px;
+	/* margin-left: -1px; */
+	margin-top: -1px;
+	border-bottom-color: transparent;
+	text-align: center;
+
+
+}
+.table ul li i {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background:url(../img/sprite_fs@1x.png) 0px -87px;
+	margin-top: 15px;
+	margin-left: 11px;
+}
+.table ul li span {
+	line-height: 30px;
+}
+
+
+/* main的结束 */
+/* 秒杀开始 */
+
+.miaosha {
+
+	width: 1190px;
+	height: 55px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-image: url(../img/seckill_hd.png);
+	position: relative;
+
+}
+.miaosha .bgimg  {
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background: url(../img/bg.png) no-repeat right -52px;
+}
+.ms-left {
+	position:relative;
+	height: 55px;
+}
+.ms-left i {
+	position: absolute;
+	width: 35px;
+	height: 41px;
+	background: url(../img/bg.png) no-repeat left -39px;
+	top: 8px ;
+	left: 30px;
+}
+.ms-left .jdms {
+	position: absolute;
+	top: 15px;
+	left: 73px;
+	font-size: 24px;
+	color: #fff;
+}
+.ms-left p {
+	color:#fff;
+	position: absolute;
+	top: 22px;
+	left: 187px; 
+}
+.ms-left p span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+}
+.miaosha .ms-right{
+	position: absolute;
+	width: 280px;
+	height: 55px;
+	right: 21px;
+	top:3px;
+}
+.miaosha .ms-right .dangqian {
+	position: absolute;
+	color: #fff;
+	top:23px;
+}
+.miaosha .ms-right .m-01 {
+	position: absolute;
+	width: 35px;
+	height: 37px;
+	background-color: #440106;
+	color: #f90013;
+	line-height: 37px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	top: 10px;
+	left: 62px;
+	border-radius: 4px;
+
+}
+.miaosha .ms-right b {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color:  #440106;
+}
+.miaosha .ms-right .b1 {
+	top: 8px;
+}
+.miaosha .ms-right .e1 {
+	width: 8px;
+	height: 17px;
+	position: absolute;
+	top: 23px;
+	left: 100px;
+}
+.miaosha .ms-right .m-02 {
+	position: absolute;
+	width: 35px;
+	height: 37px;
+	background-color: #440106;
+	color: #f90013;
+	line-height: 37px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	top: 10px;
+	left: 109px;
+	border-radius: 4px;
+
+}
+.miaosha .ms-right .e2{
+	width: 8px;
+	height: 17px;
+	position: absolute;
+	top: 23px;
+	left: 147px;
+}
+.miaosha .ms-right .m-03 {
+	position: absolute;
+	width: 35px;
+	height: 37px;
+	background-color: #440106;
+	color: #f90013;
+	line-height: 37px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	top: 10px;
+	left: 155px;
+	border-radius: 4px;
+
+}
+.miaosha .ms-right .jieshu {
+	position: absolute;
+	color: #fff;
+	top:23px;
+	left:199px;
+}
+/* 秒杀结束 */
