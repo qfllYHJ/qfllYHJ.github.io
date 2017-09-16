@@ -1,285 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/jd.css">
-        <link rel="stylesheet" href="font/iconfont.css">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" class="ico">
-    </head>
-    <body>
 
-    	<!-- topBanner的开始 -->
-    	<div class="topBanner">
-			<div class="w">
-				<div class="pic">
-					<img src="img/topBanner.jpg" height="80" width="1190" alt="">
-					<i class="iconfont icon-cuowu"></i>
-				</div>
-				<img src="img/618.jpg" class="_618" height="80" width="150" alt="">
-			</div>
-    	</div>
-		<!-- topBanner的结束 -->
-		<!-- shortcunt的开始 -->
-    	<div class="shortcut">
-    		<div class="w">
-    			<div class="shout-left">
-    				<i class="iconfont icon-shouhuodizhi"></i>
-    				<span>深圳</span>
-    			</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图灵聊天机器人</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: rgb(229, 228, 219);
+        }
+        
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            background-color: rgb(246, 244, 236);
+            position: relative;
+        }
+        
+        .chat {
+            width: 480px;
+            height: 440px;
+            border: 1px solid #ccc;
+            margin: 5px auto;
+            background-color: white;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+        
+        .input-send {
+            width: 480px;
+            height: 40px;
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid #ccc;
+        }
+        
+        .inp {
+            width: 420px;
+            padding-left: 10px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            float: left;
+            outline: none;
+        }
+        
+        .btn {
+            height: 40px;
+            width: 50px;
+            float: left;
+            border: none;
+            border-left: 1px solid #ccc;
+            background-color: white;
+            outline: none;
+        }
+        
+        .ai {
+            /* border: 1px solid red; */
+            margin-bottom: 10px;
+        }
+        
+        .icon {
+            width: 25px;
+            height: 25px;
+            background-color: black;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            color: white;
+            line-height: 25px;
+            float: left;
+        }
+        
+        .info {
+            margin-left: 10px;
+            float: left;
+            padding: 0 10px 10px 10px;
+            border: 1px solid darkkhaki;
+            /* line-height: 5px; */
+            background-color: darkkhaki;
+            color: white;
+            max-width: 300px;
+            min-width: 30px;
+            min-height: 20px;
+            word-break: break-all;
+            position: relative;
+        }
+        
+        .info::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 8px solid red;
+            left: -17px;
+            top: 4px;
+            border-color: transparent darkkhaki transparent transparent;
+        }
+        
+        .time {
+            font-size: 12px;
+            color: #ccc;
+            clear: both;
+            display: block;
+            padding: 10px 10px 0 25px;
+        }
+        
+        .self {
+            overflow: hidden;
+            display: none;
+        }
+        
+        .self div {
+            float: right;
+        }
+        
+        .self p {
+            background-color: greenyellow;
+            padding: 0 10px 10px 10px;
+            float: right;
+            position: relative;
+            color: black;
+            max-width: 300px;
+            min-width: 30px;
+            min-height: 20px;
+        }
+        
+        .self p::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 8px solid red;
+            right: -16px;
+            top: 4px;
+            border-color: transparent transparent transparent greenyellow;
+        }
+        
+        .self .icon-self {
+            float: right;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: tomato;
+            text-align: center;
+            line-height: 25px;
+            font-style: normal;
+            color: black;
+            margin-left: 10px;
+        }
+    </style>
+</head>
 
-    			<div class="shout-right">
-    			<ul>
-    				<li><a href="#">你好，请登录</a></li>
-    				<li class="red"><a href="#">免费注册</a></li>
-    				<li class="line"></li>
-    				<li><a href="#">我的订单</a></li>
-    				<li class="line"></li>
-    				<li><a href="#">我的京东<i class="iconfont icon-xiajiantou"></i></a></li>
-    				<li class="line"></li>
-    				<li><a href="#">京东会员</a></li>
-    				<li class="line"></li>
-    				<li><a href="#">企业采购</a></li>
-    				<li class="line"></li>
-    				<li><a href="#">客户服务<i class="iconfont icon-xiajiantou"></i></a></li>
-    				<li class="line"></li>
-    				<li><a href="#">网站导航<i class="iconfont icon-xiajiantou"></i></a></li>
-    				<li class="line"></li>
-    				<li><a href="#">手机京东</a></li>
-    			</ul>
-
-    		</div>
-    		<div class="clear"></div>
-    	</div>
-    </div>
-    	<!-- shortcunt的结束 -->
-    	<!-- logo的开始 -->
-    	<div class="header w">
-    		<h1 class="logo">
-    			<a href="#"><img src="img/logo.gif"  alt=""></a>
-    			京东多快好省
-    		</h1>
-    		<div class="search">
-
-    			<input type="text">
-    			<i class= "iconfont icon-13"></i>
-    			<button class="iconfont icon-sousuo"></button>
-
-    		</div>
-
-
-    		<div class="buycar">
-    			<a href="#">
-    				<i class="iconfont icon-gouwuche"></i><span>我的购物车</span><span class="num">0</span>
-
-    			</a>
-    		</div>
-    		<a href="#" class="code"><img src="img/code.png" height="60" width="60" alt=""></a>
-    	
-	    	<div class="txt">
-	    		<ul>
-	    			<li><a href="#">满1000返1500</a></li>
-	    			<li><a href="#">抢618元神劵</a></li>
-	    			<li><a href="#">农药5折</a></li>
-	    			<li><a href="#">京东服装</a></li>
-	    			<li><a href="#">618抢家电</a></li>
-	    			<li><a href="#">大衣男</a></li>
-	    			<li><a href="#">壁纸</a></li>
-	    			<li><a href="#">199减100劵</a></li>
-	    			<li><a href="#">壁纸</a></li>
-	    		</ul>
-	    	</div>
-	    	<div class="nav">
-	    		<ul>
-	    			<li><a href="#">秒杀</a></li>
-	    			<li><a href="#">优惠劵</a></li>
-	    			<li><a href="#">闪购</a></li>
-	    			<li><a href="#">拍卖</a></li>
-	    			<li class="line"></li>
-	    			<li><a href="#">服务城</a></li>
-	    			<li><a href="#">京东超市</a></li>
-	    			<li><a href="#">生鲜</a></li>
-	    			<li><a href="#">全球购</a></li>
-	    			<li class="line"></li>
-	    			<li><a href="#">京东金融</a></li>
-	    		</ul>
-	    	</div>
-    	</div>
-    	<!-- logo的结束 -->
-          <div class="bg">
-        <a href="#"></a>
-    </div>
-        <!-- main的开始 -->
-         <div class="main">
-               <div class="menu">
-                   <ul>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                       <li><a href="#">京东 / 家居 /  家具</a></li>
-                   </ul>
-               </div> 
-               <div class="main-inner">
-                   <a href="#">
-                       <img src="img/slider-main.jpg" height="340" width="790" alt="">
-                   </a>
-                   <ul>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                   </ul>
-                   <span class="inner-left">
-                       <i class="iconfont icon-fanhui"></i>
-                   </span>
-                   <span class="inner-right">
-                       <i class= "iconfont icon-gengduo"></i>
-                   </span>
-                   <div class="in-left">
-                       <a href="#">
-                          <img src="img/slider-extend1.jpg" height="130" width="390" alt="">
-                       </a>
-                   </div>
-                   <div class="in-right">
-                       <a href="#">
-                           <img src="img/slider-extend2.jpg" height="130" width="390" alt="">
-                       </a>
-                   </div>
-               </div>
-               <div class="main-left">
-                   <div class="user">
-                       <a href="#" class="user-img">
-                           <img src="img/no_login.jpg" alt="">
-                       </a>
-                       <span>Hi,欢迎来到京...</span>
-                       <a href="#" class="login">登录</a>
-                       <a href="#" class="zhuce">注册</a>
-                       <a href="#" class="new">新人福利</a>
-                       <a href="#" class="plus">PLUS会员</a>
-                   </div>
-                   <div class="news">
-                       <div class="top">
-                          <a href="#" class="cuxiao">促销</a>
-                          <i></i>
-                          <a href="#" class="gonggao">公告</a>
-                          <a href="#" class="gengduo">更多</a>  
-                          <span></span> 
-                       </div>
-                       <div class="news-list">
-                           <a href="#">这是一个寂寞的天，下...</a>
-                           <a href="#">这是一个寂寞的天，下...</a>
-                           <a href="#">这是一个寂寞的天，下...</a>
-                           <a href="#">这是一个寂寞的天，下...</a>
-                       </div>
-
-                   </div>
-                   <div class="table">
-                      <ul>
-                         <li>
-                             <i></i>
-                             <span>话费</span>
-                         </li>
-                         <li>
-                             <i></i>
-                             <span>机票</span>
-                         </li>
-                         <li>  
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                            
-                             <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                         <li>                             
-                            <i></i>
-                             <span>机票</span>
-                        </li>
-                       </ul>
-                   </div>
-               </div>
-         </div>
-        <!-- main的结束 -->
-        <!-- 秒杀开始 -->
-        <div class="miaosha">
-            <i class="bgimg"></i>
-            <div class="ms-left">
-                <i></i>
-                <span class="jdms">京东秒杀</span>
-                <p>总有你想不到的低价 <span>&gt;</span></p>
+<body>
+    <div class="box">
+        <div class="chat">
+            <div class="ai">
+                <i class="icon">机</i>
+                <p class="info">hi,我是图灵机器</p>
+                <i class="time">2017-8-13 15:11:45</i>
             </div>
-            <div class="ms-right">
-               <span class="dangqian">当前场次</span>
-               <i class="m-01">01</i>
-               <em class="e1">
-                   <b class="b1"></b>
-                   <b></b>
-               </em>
-               <i class="m-02">34</i>
-               <em class="e2">
-                   <b class="b1"></b>
-                   <b></b>
-               </em>
-               <i class="m-03">15</i>
-               <span class="jieshu">
-                   后结束抢购
-               </span>
-            </div>
-            
         </div>
-        <!-- 秒杀结束 -->
-    	
+        <div class="input-send">
+            <input class="inp" type="text">
+            <button class="btn">发送</button>
+        </div>
+        <div class="self">
+            <div>
+                <i class="icon-self">人</i>
+                <p class="info-self">hi,我是图灵机器</p>
+                <i class="time">2017-8-13 15:11:45</i>
+            </div>
+        </div>
 
-    </body>
+    </div>
+    <script src="./jquery.min-1.72.js"></script>
+    <script>
+        $(function() {
+            $(".btn").click(function() {
+                    var txt = $(".inp").val();
+                    var $self = $(".self:first").clone();
+                    $self.find("p").html(txt);
+                    $self.find(".time").html(getTime);
+                    $self.show();
+                    $self.appendTo($(".chat"));
+                    scrollBottom($(".chat")[0]);
+
+                    // 获取机器人对话
+                    getAi(txt);
+                })
+                // ajax从服务器获取对话函数
+            function getAi(txt) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("post", "http://www.tuling123.com/openapi/api");
+                xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhr.onload = function() {
+                    var $ai = $(".ai:first").clone();
+                    $ai.find("p").html(xhr.responseText);
+                    $ai.find(".time").html(getTime());
+                    $ai.appendTo($(".chat"));
+                    scrollBottom($(".chat")[0]);
+                }
+                xhr.send("key=881fc5a867a745d9a3094675c93c090f&info=" + txt);
+            }
+            // 让滚动条保持在底部的函数
+            function scrollBottom(obj) {
+                obj.scrollTop = obj.scrollHeight;
+            }
+            //获取时间函数
+            function getTime() {
+                var date = new Date();
+                var y = date.getFullYear();
+                var mon = date.getMonth() + 1;
+                mon = mon < 10 ? "0" + mon : mon;
+                var d = date.getDate();
+                d = d < 10 ? "0" + d : d;
+                var h = date.getHours();
+                h = h < 10 ? "0" + h : h;
+                var m = date.getMinutes();
+                m = m < 10 ? "0" + m : m;
+                var s = date.getSeconds();
+                s = s < 10 ? "0" + s : s;
+                var time = y + "-" + mon + "-" + d + " " + h + ":" + m + ":" + s;
+                return time;
+            }
+            $(".time:first").html(getTime());
+        })
+    </script>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
